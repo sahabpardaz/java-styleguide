@@ -4,7 +4,7 @@
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
-    Checkstyle configuration that checks the Google coding conventions from Google Java Style
+    Checkstyle configuration that checks our customization on Google coding conventions
     that can be found at https://google.github.io/styleguide/javaguide.html
 
     Checkstyle is very configurable. Be sure to read the documentation at
@@ -13,7 +13,7 @@
     To completely disable a check, just comment it out or delete it from the file.
     To suppress certain violations please review suppression filters.
 
-    Authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
+    Original authors: Max Vetrenko, Ruslan Diachenko, Roman Ivanov.
 
     Checked out from: https://github.com/checkstyle/checkstyle/blob/422be612a4dce54f204094449f3de75d248e2871/src/main/resources/google_checks.xml
     File Version: 1
