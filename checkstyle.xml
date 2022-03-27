@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <!--
+Version: 1
+
 This is Sahab's customization of Google java style guide. This file is maintained at the following address:
  https://github.com/sahabpardaz/java-styleguide/blob/master/checkstyle.xml
 
