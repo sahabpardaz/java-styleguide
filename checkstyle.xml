@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <!--
-File Version: 1
-Reference file checked out from: https://github.com/checkstyle/checkstyle/blob/422be612a4dce54f204094449f3de75d248e2871/src/main/resources/google_checks.xml
+This is Sahab's customization of Google java style guide. This file is maintained at the following address:
+ https://github.com/sahabpardaz/java-styleguide/blob/master/checkstyle.xml
+
+You can see the original Google java style guide (the base of this customization) from the following address:
+ https://github.com/checkstyle/checkstyle/blob/422be612a4dce54f204094449f3de75d248e2871/src/main/resources/google_checks.xml
  -->
 <!DOCTYPE module PUBLIC
     "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
