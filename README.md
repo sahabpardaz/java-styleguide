@@ -36,3 +36,8 @@ from important points to writing a summary to pass the checkstyle.
 
 6. **AvoidUnusedImports rules is added:** Although this is not part of the Google Checkstyle,
 it has been added because it cleans the header of Java files by removing misleading references.
+
+7. **MissingJavadocType rule is ignored on test files:** Usually test files do not require javadoc as it is obvious 
+what class this test is for.
+
+7. **Suppression file(if exists) must be located beside the main file**.

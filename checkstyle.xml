@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Version: 1
+Version: 2
 
 This is Sahab's customization of Google java style guide. This file is maintained at the following address:
  https://github.com/sahabpardaz/java-styleguide/blob/master/checkstyle.xml
@@ -38,10 +38,15 @@ You can see the original Google java style guide (the base of this customization
         <property name="fileNamePattern" value="module\-info\.java$"/>
     </module>
     <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
+    <!-- Customization: If anyone wants to add suppression file, it must be located beside the main file.-->
     <module name="SuppressionFilter">
-        <property name="file" value="${org.checkstyle.google.suppressionfilter.config}"
-            default="checkstyle-suppressions.xml"/>
+        <property name="file" value="${config_loc}/checkstyle-suppressions.xml"/>
         <property name="optional" value="true"/>
+    </module>
+    <!-- Customization: We ignore 'MissingJavadocType' errors on test files.-->
+    <module name="SuppressionSingleFilter">
+        <property name="checks" value="MissingJavadocType"/>
+        <property name="files" value="^.*/src/test/java/.*Test\.java$"/>
     </module>
 
     <!-- Checks for whitespace                               -->
@@ -349,13 +354,15 @@ You can see the original Google java style guide (the base of this customization
           <property name="tokens" value="METHOD_DEF, CTOR_DEF, ANNOTATION_FIELD_DEF,
                                        COMPACT_CTOR_DEF"/>
         </module> -->
-        <module name="MissingJavadocType">
+
+        <!-- customization: Currently we can't disable only this rule on tests so we have to disable it. -->
+        <!--<module name="MissingJavadocType">
             <property name="scope" value="protected"/>
             <property name="tokens"
                 value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF,
                       RECORD_DEF, ANNOTATION_DEF"/>
             <property name="excludeScope" value="nothing"/>
-        </module>
+        </module>-->
         <module name="MethodName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
             <message key="name.invalidPattern"
