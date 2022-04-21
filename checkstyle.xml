@@ -355,14 +355,13 @@ You can see the original Google java style guide (the base of this customization
                                        COMPACT_CTOR_DEF"/>
         </module> -->
 
-        <!-- customization: Currently we can't disable only this rule on tests so we have to disable it. -->
-        <!--<module name="MissingJavadocType">
+        <module name="MissingJavadocType">
             <property name="scope" value="protected"/>
             <property name="tokens"
                 value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF,
                       RECORD_DEF, ANNOTATION_DEF"/>
             <property name="excludeScope" value="nothing"/>
-        </module>-->
+        </module>
         <module name="MethodName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
             <message key="name.invalidPattern"
