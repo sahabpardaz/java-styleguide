@@ -1,10 +1,24 @@
 # Java Style Guide
-In Sahab, we follow a code style that is mostly based on [Google code style](https://google.github.io/styleguide/javaguide.html) with a few customizations.  
-This Github project contains some config files related to that style:
+In Sahab, we follow a code style that is mostly based on
+[Google code style](https://google.github.io/styleguide/javaguide.html) with a few customizations.  
 
--  checkstyle.xml: The config file for [Checkstyle](https://checkstyle.sourceforge.io/). Using this file and its associated tools like Maven and Gradle plugins, we can ensure our code style rules in our CI/CD pipelines. To make this file, we have used [the google check style file](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) as the base file and we have changed it a little according to our customizations. Currently, version 8.45.1
-of Checkstyle is recommended.
--  intellij-codestyle.xml: The config file to configure our code style in Intellij. To make this file, we have used [the google Intellij code style file](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) as the base file and we have changed it a little according to our customizations.
+This GitHub project contains some config files related to that style:
+- **checkstyle.xml:** The config file for [Checkstyle](https://checkstyle.sourceforge.io/).
+  Using this file and its associated tools like Maven and Gradle plugins, we can ensure our code style rules in our 
+  CI/CD pipelines. To make this file, we have used 
+  [the google check style file](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml)
+  as the base file and we have changed it a little according to our customizations. Currently, version 8.45.1 of
+  Checkstyle is recommended.
+- **intellij-codestyle.xml:** The config file to configure our code style in Intellij. To make this file, we have used
+  [the google Intellij code style file](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml)
+  as the base file and we have changed it a little according to our customizations.
+
+## Configuring the tools to comply with styleguide.
+- **IntelliJ:** You can import `intellij-codestyle.xml` as a codestyle. Also you can use the 
+  [Checkstyle plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) and
+  import the `checkstyle.xml` directly to the plugin.
+- **VSCode:** You can use [Checkstyle for Java](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-checkstyle)
+  plugin and import the `checkstyle.xml` file to the plugin.
 
 ## The customizations 
 We used the Google code style after the following customizations:
@@ -35,5 +49,3 @@ it has been added because it cleans the header of Java files by removing mislead
 
 7. **MissingJavadocType rule is ignored on test files:** Usually test files do not require javadoc as it is obvious 
 what class this test is for.
-
-7. **Suppression file(if exists) must be located beside the main file**.
