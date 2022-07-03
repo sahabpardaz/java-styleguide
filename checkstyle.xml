@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Version: 2
+Version: 3
 
 This is Sahab's customization of Google java style guide. This file is maintained at the following address:
  https://github.com/sahabpardaz/java-styleguide/blob/master/checkstyle.xml
@@ -40,7 +40,8 @@ You can see the original Google java style guide (the base of this customization
     <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
     <!-- Customization: If anyone wants to add suppression file, it must be located beside the main file.-->
     <module name="SuppressionFilter">
-        <property name="file" value="${config_loc}/checkstyle-suppressions.xml"/>
+        <property name="file" value="${config_loc}/checkstyle-suppressions.xml"
+                  default="checkstyle-suppressions.xml"/>
         <property name="optional" value="true"/>
     </module>
     <!-- Customization: We ignore 'MissingJavadocType' errors on test files.-->
