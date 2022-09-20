@@ -12,7 +12,7 @@ This GitHub project contains some config files related to that style:
 - **intellij-codestyle.xml:** The config file to configure our code style in Intellij. To make this file, we have used
   [the google Intellij code style file](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml)
   as the base file and we have changed it a little according to our customizations.
-- **intellij-codestyle.xml:** The config file to configure our code style in Eclipse. To make this file, we have used
+- **eclipse-codestyle.xml:** The config file to configure our code style in Eclipse. To make this file, we have used
   [the google Eclipse code style file](https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml)
   as the base file and we have changed it a little according to our customizations.  
 
