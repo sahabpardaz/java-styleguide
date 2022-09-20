@@ -12,12 +12,16 @@ This GitHub project contains some config files related to that style:
 - **intellij-codestyle.xml:** The config file to configure our code style in Intellij. To make this file, we have used
   [the google Intellij code style file](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml)
   as the base file and we have changed it a little according to our customizations.
+- **intellij-codestyle.xml:** The config file to configure our code style in Eclipse. To make this file, we have used
+  [the google Eclipse code style file](https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml)
+  as the base file and we have changed it a little according to our customizations.  
 
 ## Configuring the tools to comply with styleguide.
-- **IntelliJ:** You can import `intellij-codestyle.xml` as a codestyle. Also you can use the 
+- **IntelliJ:** You can import `intellij-codestyle.xml` as codestyle formatter. Also you can use the 
   [Checkstyle plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) and
   import the `checkstyle.xml` directly to the plugin.
-- **VSCode:** You can use [Checkstyle for Java](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-checkstyle)
+- **VSCode:** You can import `eclipse-codestyle.xml` as codestyle formatter. Also you can use the 
+  [Checkstyle for Java](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-checkstyle)
   plugin and import the `checkstyle.xml` file to the plugin.
 
 ## The customizations 
